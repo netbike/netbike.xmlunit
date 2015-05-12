@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="XmlComparisonDetails.cs" />
+    <Compile Include="XmlComparisonResult.cs" />
     <Compile Include="XmlValidationError.cs" />
     <Compile Include="XmlComparisonFormatter.cs" />
     <Compile Include="IXmlAnalyzer.cs" />
@@ -63,8 +65,6 @@
     <Compile Include="XmlComparisonType.cs" />
     <Compile Include="XmlCustomAnalyzer.cs" />
     <Compile Include="XmlDifference.cs" />
-    <Compile Include="XmlDifferenceDetails.cs" />
-    <Compile Include="XmlDifferenceItem.cs" />
     <Compile Include="XmlNodeMatch.cs" />
     <Compile Include="XmlNodeMatcher.cs" />
     <Compile Include="XmlValidationResult.cs" />
