@@ -6,7 +6,14 @@ XML comparison and validation library.
 * Comparison result may be the "equal", "similar" or "different".
 * Useful details about all the differences: xpath, node, value and position.
 * Сustomizable comparison handling and analysis of the differences.
-* Constraints for NUnit
+* Constraints for NUnit testing.
+* .NET 3.5
+
+Install via [NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit):
+
+```
+PM> Install-Package NetBike.XmlUnit
+```
 
 Example:
 
@@ -35,6 +42,12 @@ if (!result.IsEqual)
 NUnit Adapter
 --------------
 
+Install via [NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter):
+
+```
+PM> Install-Package NetBike.XmlUnit.NUnitAdapter
+```
+
 The test value must be the String, XNode, TextReader or Stream.
 
 Example
@@ -45,3 +58,9 @@ Assert.That(
     IsXml.Equals(expected)
         .WithIgnore(XmlComparisonType.NamespacePrefix))
 ```
+
+
+License
+-------
+
+[MIT License](https://github.com/netbike/netbike.xmlunit/blob/master/LICENSE)
