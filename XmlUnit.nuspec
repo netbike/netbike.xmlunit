@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>NetBike.XmlUnit</id>
+        <version>0.1.0</version>
+        <title>NetBike.XmlUnit</title>
+        <authors>NetBike</authors>
+        <licenseUrl>https://github.com/netbike/netbike.xmlunit/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/netbike/netbike.xmlunit</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>XML comparison library.</description>
+        <tags>xml comparison xmlunit xmldiff</tags>
+    </metadata>
+    <files>
+        <file src="XmlUnit\bin\Release.Net35\NetBike.XmlUnit.dll" target="lib\net35\NetBike.XmlUnit.dll" />
+        <file src="XmlUnit\bin\Release\NetBike.XmlUnit.dll" target="lib\net45\NetBike.XmlUnit.dll" />
+    </files>
+</package>
