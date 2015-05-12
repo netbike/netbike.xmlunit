@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- comment one -->
+<example>
+  <!-- comment two -->
+  <id>1234567890</id>
+  <name>Hello, World</name>
+</example>

@@ -1,0 +1,4 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://example.org" xmlns:mstns="http://example.org" xmlns="http://example.org" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://example.org">
+  <xs:element name="message" msdata:Prefix="x" type="xs:string" />
+</xs:schema>

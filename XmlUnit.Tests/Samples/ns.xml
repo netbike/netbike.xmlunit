@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<example xmlns:x ="http://example.org">
+  <x:message>
+    hello, world!
+  </x:message>
+</example>
