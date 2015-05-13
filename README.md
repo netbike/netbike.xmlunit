@@ -59,7 +59,7 @@ Assert.That(
         .WithIgnore(XmlComparisonType.NamespacePrefix))
 ```
 
-Contributers
+Contributors
 ------------
 
 * [Anton Mastrakov](https://github.com/a-mastrakov)
