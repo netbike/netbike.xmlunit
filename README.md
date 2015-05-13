@@ -59,6 +59,14 @@ Assert.That(
         .WithIgnore(XmlComparisonType.NamespacePrefix))
 ```
 
+Contributers
+------------
+
+* [Anton Mastrakov](https://github.com/a-mastrakov)
+* [Pavel Shkarin](https://github.com/a7b0)
+
+Inspired by [XmlUnit](http://xmlunit.org).
+
 
 License
 -------
