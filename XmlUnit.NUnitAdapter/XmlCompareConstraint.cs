@@ -2,6 +2,7 @@
 {
     using System;
     using System.IO;
+    using System.Linq;
     using System.Xml.Linq;
     using NUnit.Framework.Constraints;
 
@@ -40,7 +41,11 @@
 
             var actualNode = GetXNode(actual);
 
-            this.result = this.comparer.Compare(this.expectedNode, actualNode);
+            var result = this.comparer.Compare(this.expectedNode, actualNode);
+            var differences = result.Differences.Where(x => x.State > this.expectedState);
+
+            this.result = new XmlComparisonResult(result.State, differences);
+
             return ResolveState(this.expectedState, this.result.State);
         }
 
