@@ -1,4 +1,4 @@
-NetBike.XmlUnit
+﻿NetBike.XmlUnit
 ===============
 
 XML comparison and validation library.
@@ -42,10 +42,16 @@ if (!result.IsEqual)
 NUnit Adapter
 --------------
 
-Install via [NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter):
+[NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter) for NUnit 2:
 
 ```
 PM> Install-Package NetBike.XmlUnit.NUnitAdapter
+```
+
+[NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter3) for NUnit 3:
+
+```
+PM> Install-Package NetBike.XmlUnit.NUnitAdapter3
 ```
 
 The test value must be the String, XNode, TextReader or Stream.

@@ -73,6 +73,12 @@
     <Content Include="Samples\attr.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Samples\issue-1-actual.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Samples\issue-1-expected.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Samples\ns-with-another-namespace.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -107,7 +113,7 @@
   <ItemGroup>
     <ProjectReference Include="..\XmlUnit.NUnitAdapter\XmlUnit.NUnitAdapter.csproj">
       <Project>{aa77b023-d6b3-4cbb-bef0-661774dec658}</Project>
-      <Name>XmlUnit.NUnitAdapter</Name>
+      <Name>XmlUnit.NUnitAdapter2</Name>
     </ProjectReference>
     <ProjectReference Include="..\XmlUnit\XmlUnit.csproj">
       <Project>{4c030688-c116-4c7e-abde-5ce116faaae7}</Project>

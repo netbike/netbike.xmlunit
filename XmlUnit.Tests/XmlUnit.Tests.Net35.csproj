@@ -107,7 +107,7 @@
   <ItemGroup>
     <ProjectReference Include="..\XmlUnit.NUnitAdapter\XmlUnit.NUnitAdapter.Net35.csproj">
       <Project>{aa77b023-d6b3-4cbb-bef0-661774dec658}</Project>
-      <Name>XmlUnit.NUnitAdapter.Net35</Name>
+      <Name>XmlUnit.NUnit2.Constraints.Net35</Name>
     </ProjectReference>
     <ProjectReference Include="..\XmlUnit\XmlUnit.Net35.csproj">
       <Project>{4c030688-c116-4c7e-abde-5ce116faaae7}</Project>
