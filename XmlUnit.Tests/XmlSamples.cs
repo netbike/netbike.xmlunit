@@ -6,17 +6,17 @@
     {
         public static string GetContent(string name)
         {
-            return File.ReadAllText("samples/" + name + ".xml");
+            return File.ReadAllText("Samples/" + name + ".xml");
         }
 
         public static string GetContentByFullName(string name)
         {
-            return File.ReadAllText("samples/" + name);
+            return File.ReadAllText("Samples/" + name);
         }
 
         public static string GetFullPathByName(string name)
         {
-            return Path.GetFullPath("samples/" + name);
+            return Path.GetFullPath("Samples/" + name);
         }
     }
 }

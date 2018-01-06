@@ -496,25 +496,7 @@
                 return false;
             }
 
-            if (expectedElement.HasElements)
-            {
-                return this.CompareContainers(context, expectedElement, actualElement);
-            }
-
-            if (!this.TextEquals(expectedElement.Value, actualElement.Value))
-            {
-                var comparison = new XmlComparison(
-                       XmlComparisonType.TextValue,
-                       new XmlComparisonDetails(expectedElement, expectedElement.Value),
-                       new XmlComparisonDetails(actualElement, actualElement.Value));
-
-                if (!this.HandleDifference(context, comparison))
-                {
-                    return false;
-                }
-            }
-
-            return true;
+            return this.CompareContainers(context, expectedElement, actualElement);
         }
 
         private bool CompareAttributes(XmlCompareContext context, XElement expectedElement, XElement actualElement)

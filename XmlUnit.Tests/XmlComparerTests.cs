@@ -143,6 +143,26 @@
                     });
         }
 
+        [Test]
+        public void Issue1CompareTest()
+        {
+            var comparer = new XmlComparer
+            {
+                NormalizeText = true,
+                Analyzer = new XmlCustomAnalyzer()
+                    .SetState(XmlComparisonState.Equal, XmlComparisonType.NamespacePrefix),
+            };
+
+            var comparison = CompareItems("issue-1-expected", "issue-1-actual");
+            AssertComparison(
+                comparison,
+                XmlComparisonState.Different,
+                new XmlComparisonType[]
+                    {
+                        XmlComparisonType.NodeListLookup
+                    });
+        }
+
         private static XmlComparisonResult CompareItems(string expectedItem, string actualItem)
         {
             return CompareItems(new XmlComparer(), expectedItem, actualItem);

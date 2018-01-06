@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <ns1:a xmlns:ns1='bespey.test'>
+    <b att1='val1'>
+      <c>hello world</c>
+    </b>
+  </ns1:a>
+</root>
