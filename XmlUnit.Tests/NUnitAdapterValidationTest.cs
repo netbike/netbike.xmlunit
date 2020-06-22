@@ -4,7 +4,7 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class NUnitAdapterValidationTest
+    public class NUnitAdapterValidationTest: TestBase
     {
         [Test]
         public void XmlValidationConstraintSchemaWithNamespaceTest()

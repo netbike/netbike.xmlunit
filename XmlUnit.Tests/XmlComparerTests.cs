@@ -5,7 +5,7 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class XmlComparerTests
+    public class XmlComparerTests: TestBase
     {
         [Test]
         public void CompareElementsIsEqualTests()

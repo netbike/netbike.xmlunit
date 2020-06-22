@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>NetBike.XmlUnit.NUnitAdapter3</id>
-        <version>0.2.0</version>
+        <version>0.3.0</version>
         <title>NetBike.XmlUnit.NUnitAdapter3</title>
         <authors>NetBike</authors>
         <licenseUrl>https://github.com/netbike/netbike.xmlunit/blob/master/LICENSE</licenseUrl>
@@ -11,10 +11,23 @@
         <description>NUnit 3 constraints for testing and validation XML.</description>
         <tags>xml nunit nunit3 xmlunit</tags>
         <dependencies>
-            <dependency id="NetBike.XmlUnit" version="0.2.0" />
+            <group targetFramework="net45" >
+				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
+			</group>
+			<group targetFramework="net472">
+				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
+			</group>
+			<group targetFramework="netstandard2.0" >
+				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
+			</group>
         </dependencies>
     </metadata>
     <files>
-        <file src="XmlUnit.NUnitAdapter3\bin\Release\NetBike.XmlUnit.NUnitAdapter.dll" target="lib\net45\NetBike.XmlUnit.NUnitAdapter.dll" />
+        <file src="XmlUnit.NUnitAdapter3\bin\Release\net45\NetBike.XmlUnit.NUnitAdapter.dll" target="lib\net45\NetBike.XmlUnit.NUnitAdapter.dll" />
+		<file src="XmlUnit.NUnitAdapter3\bin\Release\net472\NetBike.XmlUnit.NUnitAdapter.dll" target="lib\net472\NetBike.XmlUnit.NUnitAdapter.dll" />
+		<file src="XmlUnit.NUnitAdapter3\bin\Release\netstandard2.0\NetBike.XmlUnit.NUnitAdapter.dll" target="lib\netstandard2.0\NetBike.XmlUnit.NUnitAdapter.dll" />
     </files>
 </package>

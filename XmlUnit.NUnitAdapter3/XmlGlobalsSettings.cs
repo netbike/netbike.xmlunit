@@ -13,112 +13,37 @@
 
         public static XmlCompareHandler CompareHandler
         {
-            get
-            {
-                return compareHandler;
-            }
+            get => compareHandler;
 
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-
-                compareHandler = value;
-            }
+            set => compareHandler = value ?? throw new ArgumentNullException(nameof(value));
         }
 
         public static IXmlAnalyzer Analyzer
         {
-            get
-            {
-                if (analyzer == null)
-                {
-                    analyzer = XmlAnalyzer.Default;
-                }
+            get => analyzer ?? (analyzer = XmlAnalyzer.Default);
 
-                return analyzer;
-            }
-
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-
-                analyzer = value;
-            }
+            set => analyzer = value ?? throw new ArgumentNullException(nameof(value));
         }
 
         public static IXmlNodeMatcher NodeMatcher
         {
-            get
-            {
-                if (nodeMatcher == null)
-                {
-                    nodeMatcher = XmlNodeMatcher.ByLocalName;
-                }
+            get => nodeMatcher ?? (nodeMatcher = XmlNodeMatcher.ByLocalName);
 
-                return nodeMatcher;
-            }
-
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-
-                nodeMatcher = value;
-            }
+            set => nodeMatcher = value ?? throw new ArgumentNullException(nameof(value));
         }
 
         public static IXmlComparisonFormatter Formatter
         {
-            get
-            {
-                if (formatter == null)
-                {
-                    formatter = new NUnitComparisonFormatter();
-                }
+            get => formatter ?? (formatter = new NUnitComparisonFormatter());
 
-                return formatter;
-            }
-
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-
-                formatter = value;
-            }
+            set => formatter = value ?? throw new ArgumentNullException(nameof(value));
         }
 
         public static XmlResolver XmlResolver
         {
-            get
-            {
-                if (xmlResolver == null)
-                {
-                    xmlResolver = new XmlUrlResolver();
-                }
+            get => xmlResolver ?? (xmlResolver = new XmlUrlResolver());
 
-                return xmlResolver;
-            }
-
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("value");
-                }
-
-                xmlResolver = value;
-            }
+            set => xmlResolver = value ?? throw new ArgumentNullException(nameof(value));
         }
     }
 }

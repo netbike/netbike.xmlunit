@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>NetBike.XmlUnit</id>
-        <version>0.2.0</version>
+        <version>0.3.0</version>
         <title>NetBike.XmlUnit</title>
         <authors>NetBike</authors>
         <licenseUrl>https://github.com/netbike/netbike.xmlunit/blob/master/LICENSE</licenseUrl>
@@ -10,9 +10,15 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>XML comparison library.</description>
         <tags>xml comparison xmlunit xmldiff</tags>
+		<dependencies>
+			<group targetFramework="net45" />
+			<group targetFramework="net472" />
+			<group targetFramework="netstandard2.0" />
+		</dependencies>
     </metadata>
     <files>
-        <file src="XmlUnit\bin\Release.Net35\NetBike.XmlUnit.dll" target="lib\net35\NetBike.XmlUnit.dll" />
-        <file src="XmlUnit\bin\Release\NetBike.XmlUnit.dll" target="lib\net45\NetBike.XmlUnit.dll" />
+        <file src="XmlUnit\bin\Release\net45\NetBike.XmlUnit.dll" target="lib\net45\NetBike.XmlUnit.dll" />
+		<file src="XmlUnit\bin\Release\net472\NetBike.XmlUnit.dll" target="lib\net472\NetBike.XmlUnit.dll" />
+		<file src="XmlUnit\bin\Release\netstandard2.0\NetBike.XmlUnit.dll" target="lib\netstandard2.0\NetBike.XmlUnit.dll" />
     </files>
 </package>
