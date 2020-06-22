@@ -6,7 +6,7 @@
     using NUnit.Framework;
 
     [TestFixture]
-    public class NUnitAdapterCompareTests
+    public class NUnitAdapterCompareTests : TestBase
     {
         [Test]
         public void XmlCompareConstraintSimpleEqualsTest()

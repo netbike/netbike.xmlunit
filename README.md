@@ -7,7 +7,7 @@ XML comparison and validation library.
 * Useful details about all the differences: xpath, node, value and position.
 * Сustomizable comparison handling and analysis of the differences.
 * Constraints for NUnit testing.
-* .NET 3.5
+* .NET 4.5, .NET 4.7.2, netstandad 2.0
 
 Install via [NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit):
 
@@ -41,12 +41,6 @@ if (!result.IsEqual)
 
 NUnit Adapter
 --------------
-
-[NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter) for NUnit 2:
-
-```
-PM> Install-Package NetBike.XmlUnit.NUnitAdapter
-```
 
 [NuGet package](https://www.nuget.org/packages/NetBike.XmlUnit.NUnitAdapter3) for NUnit 3:
 

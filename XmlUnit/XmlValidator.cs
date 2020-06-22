@@ -22,12 +22,12 @@
         {
             if (document == null)
             {
-                throw new ArgumentNullException("document");
+                throw new ArgumentNullException(nameof(document));
             }
 
             if (schemaSet == null)
             {
-                throw new ArgumentNullException("schema");
+                throw new ArgumentNullException(nameof(schemaSet));
             }
 
             var errors = new List<XmlValidationError>();
@@ -45,12 +45,12 @@
         {
             if (textReader == null)
             {
-                throw new ArgumentNullException("textReader");
+                throw new ArgumentNullException(nameof(textReader));
             }
 
             if (schemaSet == null)
             {
-                throw new ArgumentNullException("schema");
+                throw new ArgumentNullException(nameof(schemaSet));
             }
 
             var errors = new List<XmlValidationError>();

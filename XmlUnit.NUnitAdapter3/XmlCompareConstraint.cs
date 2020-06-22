@@ -17,7 +17,7 @@
         {
             if (expected == null)
             {
-                throw new ArgumentNullException("expected");
+                throw new ArgumentNullException(nameof(expected));
             }
 
             this.expectedNode = GetXNode(expected);
@@ -93,15 +93,15 @@
             return this;
         }
 
-        public XmlCompareConstraint WithIgnoreProcessingInstructions(bool ignoreProcessingInstuctions = true)
+        public XmlCompareConstraint WithIgnoreProcessingInstructions(bool ignoreProcessingInstructions = true)
         {
-            this.comparer.IgnoreProcessingInstructions = ignoreProcessingInstuctions;
+            this.comparer.IgnoreProcessingInstructions = ignoreProcessingInstructions;
             return this;
         }
 
-        public XmlCompareConstraint WithIgnoreDocumentType(bool ignoreDocmentType = true)
+        public XmlCompareConstraint WithIgnoreDocumentType(bool ignoreDocumentType = true)
         {
-            this.comparer.IgnoreDocumentTypes = ignoreDocmentType;
+            this.comparer.IgnoreDocumentTypes = ignoreDocumentType;
             return this;
         }
 
