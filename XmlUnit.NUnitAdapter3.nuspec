@@ -13,12 +13,15 @@
         <dependencies>
             <group targetFramework="net45" >
 				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
 			</group>
 			<group targetFramework="net472">
 				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
 			</group>
 			<group targetFramework="netstandard2.0" >
 				<dependency id="NetBike.XmlUnit" version="0.3.0" />
+				<dependency id="NUnit" version="3.12.0" />
 			</group>
         </dependencies>
     </metadata>
