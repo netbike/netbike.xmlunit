@@ -6,7 +6,28 @@
     <TargetFrameworks>net45;net472;netstandard2.0</TargetFrameworks>
     <AssemblyTitle>NetBike.XmlUnit</AssemblyTitle>
     <Company>NetBike</Company>
-    <Product>NetBike.XmlUnit</Product>
     <Copyright>Copyright © NetBike 2015</Copyright>
+    <Product>NetBike.XmlUnit</Product>
+    <Description>XML comparison library</Description>
+    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <Version>0.3.0</Version>
+    <Authors>NetBike</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/netbike/netbike.xmlunit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/netbike/netbike.xmlunit.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
+    <PackageTags>xml comparison xmlunit xmldiff</PackageTags>
+    <PackageId>Resta.UriTemplates</PackageId>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
+  </ItemGroup>
+
 </Project>
