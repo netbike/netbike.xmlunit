@@ -1,6 +1,9 @@
 ﻿NetBike.XmlUnit
 ===============
 
+[![Build Status](https://cloud.drone.io/api/badges/netbike/netbike.xmlunit/status.svg)](https://cloud.drone.io/netbike/netbike.xmlunit)
+[![NuGet](https://img.shields.io/nuget/v/NetBike.XmlUnit)](https://www.nuget.org/packages/NetBike.XmlUnit)
+
 XML comparison and validation library.
 
 * Comparison result may be the "equal", "similar" or "different".
