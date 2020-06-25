@@ -3,7 +3,7 @@
     <ProjectGuid>{E1CD295F-A7E4-4BF5-A52E-4C399BEA1848}</ProjectGuid>
     <RootNamespace>NetBike.XmlUnit.NUnitAdapter</RootNamespace>
     <AssemblyName>NetBike.XmlUnit.NUnitAdapter</AssemblyName>
-    <TargetFrameworks>net45;net472;netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyTitle>NetBike.XmlUnit.NUnitAdapter</AssemblyTitle>
     <Company>NetBike</Company>
     <Product>NetBike.XmlUnit.NUnitAdapter3</Product>

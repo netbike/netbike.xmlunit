@@ -3,7 +3,7 @@
     <ProjectGuid>{5D38DBAE-5ED0-46B2-92B6-CE4996D875B9}</ProjectGuid>
     <RootNamespace>NetBike.XmlUnit.Tests</RootNamespace>
     <AssemblyName>NetBike.XmlUnit.Tests</AssemblyName>
-    <TargetFrameworks>net48;netcoreapp3.1</TargetFrameworks>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <AssemblyTitle>NetBike.XmlUnit.Tests</AssemblyTitle>
     <Company>NetBike</Company>
     <Product>NetBike.XmlUnit.Tests</Product>
