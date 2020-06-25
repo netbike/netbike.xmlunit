@@ -8,6 +8,16 @@
     <Company>NetBike</Company>
     <Product>NetBike.XmlUnit.NUnitAdapter3</Product>
     <Copyright>Copyright © NetBike 2017</Copyright>
+    <Description>NUnit 3 constraints for testing and validation XML</Description>
+    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <Version>0.3.0</Version>
+    <Authors>NetBike</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/netbike/netbike.xmlunit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/netbike/netbike.xmlunit.git</RepositoryUrl> 
+    <RepositoryType>git</RepositoryType> 
+    <PackageTags>xml comparison xmlunit xmldiff nunit</PackageTags>
+    <PackageId>NetBike.XmlUnit.NUnitAdapter3</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="NUnit" Version="3.12.0" />

@@ -33,9 +33,9 @@ steps:
   - name: nuget
     path: /root/.nuget/packages/
   commands:
-  - cd XmlUnit
   - dotnet pack -c Release --no-build --no-restore
-  - dotnet nuget push bin/Release/**.nupkg --source "https://nuget.org" --api-key $NUGET_APIKEY --skip-duplicate
+  - dotnet nuget push XmlUnit/bin/Release/**.nupkg --source "https://nuget.org" --api-key $NUGET_APIKEY --skip-duplicate
+  - dotnet nuget push XmlUnit.NUnitAdapter3/bin/Release/**.nupkg --source "https://nuget.org" --api-key $NUGET_APIKEY --skip-duplicate
   when:
     branch:
     - master
