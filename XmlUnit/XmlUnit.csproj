@@ -17,7 +17,7 @@
     <RepositoryUrl>https://github.com/netbike/netbike.xmlunit.git</RepositoryUrl> 
     <RepositoryType>git</RepositoryType> 
     <PackageTags>xml comparison xmlunit xmldiff</PackageTags>
-    <PackageId>Resta.UriTemplates</PackageId>
+    <PackageId>NetBike.XmlUnit</PackageId>
   </PropertyGroup>
 
   <PropertyGroup>
